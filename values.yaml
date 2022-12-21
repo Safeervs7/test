@@ -1,5 +1,6 @@
-kubernetes:
-  host: https://kubernetes.default
+# Default values for bansira-banking
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
 
 helloworld:
   namespace: default
@@ -9,3 +10,6 @@ helloworld:
     pullPolicy: IfNotPresent
   service:
     ingressClass: internal-ingress
+
+nameOverride: ""
+replicaCount: 1
